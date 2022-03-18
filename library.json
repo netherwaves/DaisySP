@@ -1,0 +1,15 @@
+{
+    "name": "daisysp",
+    "version": "0.0.1",
+    "build": {
+        "srcDir" : "./Source",
+        "extraScript": "./extra_build_script.py",
+        "flags" : [
+            "-O3",
+            "-static"
+        ],
+        "unflags": [
+            "-Os"
+        ]
+    }
+  }
