@@ -4,5 +4,5 @@ var searchData=
   ['line_1',['Line',['../classdaisysp_1_1_line.html',1,'daisysp']]],
   ['linearvca_2',['LinearVCA',['../classdaisysp_1_1_linear_v_c_a.html',1,'daisysp']]],
   ['looper_3',['Looper',['../classdaisysp_1_1_looper.html',1,'daisysp']]],
-  ['low_4',['Low',['../classdaisysp_1_1_svf.html#a3fbe38989b49fba12a3a7a37f291b33c',1,'daisysp::Svf::Low()'],['../classdaisysp_1_1_svf.html#a3fbe38989b49fba12a3a7a37f291b33c',1,'daisysp::Svf::Low()']]]
+  ['low_4',['Low',['../classdaisysp_1_1_svf.html#a3fbe38989b49fba12a3a7a37f291b33c',1,'daisysp::Svf']]]
 ];
