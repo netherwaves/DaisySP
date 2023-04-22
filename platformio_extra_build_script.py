@@ -1,5 +1,9 @@
 Import("env")
 
+MCU = ["-mcpu=cortex-m7", "-mthumb", "-mfpu=fpv5-d16", "-mfloat-abi=hard"]
+OPT = ["-O3"]
+C_DEFS = ["-DSTM32H750xx"]
+
 # General options that are passed to the C compiler (C only; not C++).
 env.Append(
     CFLAGS = [
@@ -9,15 +13,26 @@ env.Append(
 # General options that are passed to the C and C++ compilers
 env.Append(
     CCFLAGS=[
-        "-finline-functions"
+        *MCU,
+        *C_DEFS,
+        # *C_INCLUDES,
+        *OPT,
+
+        # warnings
+        "-Wall",
+        "-Werror",
+        
+        # stuff..?
+        "-fdata-sections",
+        "-ffunction-sections",
     ]
 )
-# General options that are passed to the C++ compiler
+# General options that are passed to the C++ compiler (C++ only; not C).
 env.Append(
     CXXFLAGS=[
         "-std=gnu++14",
         "-fno-exceptions",  
-        "-fno-rtti"
+        "-finline-functions"
     ]
 )
 # print("printing env:")
